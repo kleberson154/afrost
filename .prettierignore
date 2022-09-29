@@ -1,0 +1,6 @@
+/*.js
+/*.ts
+cypress
+node_modules
+build
+dist
