@@ -39,25 +39,25 @@ function HowLearn() {
         mt={12}
         mb={28}
       >
-        <AnimationLeft>
-          <Flex
-            flexDirection="row-reverse"
-            alignItems="center"
-            justifyContent={{ base: "center", xl: "space-between" }}
-            h="150px"
-            w={{ base: "100%", sm: "467px" }}
-            position="relative"
-            top="0"
-            right={{ base: "0", xl: "18rem" }}
-          >
-            <Box
-              w="52px"
-              h="52px"
-              bg="#0066FF"
-              borderRadius="50px"
-              boxShadow="0px 0px 50px #0066FF"
-              display={{ base: "none", xl: "initial" }}
-            />
+        <Flex
+          flexDirection="row-reverse"
+          alignItems="center"
+          justifyContent={{ base: "center", xl: "space-between" }}
+          h="150px"
+          w={{ base: "100%", sm: "467px" }}
+          position="relative"
+          top="0"
+          right={{ base: "0", xl: "18rem" }}
+        >
+          <Box
+            w="52px"
+            h="52px"
+            bg="#0066FF"
+            borderRadius="50px"
+            boxShadow="0px 0px 50px #0066FF"
+            display={{ base: "none", xl: "initial" }}
+          />
+          <AnimationLeft>
             <Flex
               flexDirection="column"
               alignItems={{ base: "center", xl: "flex-end" }}
@@ -77,8 +77,8 @@ function HowLearn() {
                 a Apple.
               </Text>
             </Flex>
-          </Flex>
-        </AnimationLeft>
+          </AnimationLeft>
+        </Flex>
         <Box
           h="5px"
           w={40}
@@ -88,25 +88,25 @@ function HowLearn() {
           bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #0066FF, #FF00B8)`}
           bgSize="16px 2px, 100% 2px"
         />
-        <AnimationRight>
-          <Flex
-            flexDirection="row"
-            alignItems="center"
-            justifyContent={{ base: "center", xl: "space-between" }}
-            h="150px"
-            w={{ base: "100%", sm: "467px" }}
-            position="relative"
-            top="0"
-            left={{ base: "0", xl: "18rem" }}
-          >
-            <Box
-              w="52px"
-              h="52px"
-              bg="#FF00B8"
-              borderRadius="50px"
-              boxShadow="0px 0px 50px #FF00B8"
-              display={{ base: "none", xl: "initial" }}
-            />
+        <Flex
+          flexDirection="row"
+          alignItems="center"
+          justifyContent={{ base: "center", xl: "space-between" }}
+          h="150px"
+          w={{ base: "100%", sm: "467px" }}
+          position="relative"
+          top="0"
+          left={{ base: "0", xl: "18rem" }}
+        >
+          <Box
+            w="52px"
+            h="52px"
+            bg="#FF00B8"
+            borderRadius="50px"
+            boxShadow="0px 0px 50px #FF00B8"
+            display={{ base: "none", xl: "initial" }}
+          />
+          <AnimationRight>
             <Flex
               flexDirection="column"
               alignItems={{ base: "center", xl: "flex-start" }}
@@ -125,8 +125,8 @@ function HowLearn() {
                 CheckPhone, a maior certificadora de celulares do planeta
               </Text>
             </Flex>
-          </Flex>
-        </AnimationRight>
+          </AnimationRight>
+        </Flex>
         <Box
           h="5px"
           w={40}
@@ -136,25 +136,25 @@ function HowLearn() {
           bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #FF00B8, #6EBC00)`}
           bgSize="16px 2px, 100% 2px"
         />
-        <AnimationLeft>
-          <Flex
-            flexDirection="row-reverse"
-            alignItems="center"
-            justifyContent={{ base: "center", xl: "space-between" }}
-            h="150px"
-            w={{ base: "100%", sm: "467px" }}
-            position="relative"
-            top="0"
-            right={{ base: "0", xl: "18rem" }}
-          >
-            <Box
-              w="52px"
-              h="52px"
-              bg="#6EBC00"
-              borderRadius="50px"
-              boxShadow="0px 0px 50px #6EBC00"
-              display={{ base: "none", xl: "initial" }}
-            />
+        <Flex
+          flexDirection="row-reverse"
+          alignItems="center"
+          justifyContent={{ base: "center", xl: "space-between" }}
+          h="150px"
+          w={{ base: "100%", sm: "467px" }}
+          position="relative"
+          top="0"
+          right={{ base: "0", xl: "18rem" }}
+        >
+          <Box
+            w="52px"
+            h="52px"
+            bg="#6EBC00"
+            borderRadius="50px"
+            boxShadow="0px 0px 50px #6EBC00"
+            display={{ base: "none", xl: "initial" }}
+          />
+          <AnimationLeft>
             <Flex
               flexDirection="column"
               alignItems={{ base: "center", xl: "flex-end" }}
@@ -174,8 +174,8 @@ function HowLearn() {
                 revendedor
               </Text>
             </Flex>
-          </Flex>
-        </AnimationLeft>
+          </AnimationLeft>
+        </Flex>
         <Box
           h="5px"
           w={40}
@@ -185,25 +185,25 @@ function HowLearn() {
           bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #6EBC00, #9E00FF)`}
           bgSize="16px 2px, 100% 2px"
         />
-        <AnimationRight>
-          <Flex
-            flexDirection="row"
-            alignItems="center"
-            justifyContent={{ base: "center", xl: "space-between" }}
-            h="150px"
-            w={{ base: "100%", sm: "467px" }}
-            position="relative"
-            top="0"
-            left={{ base: "0", xl: "18rem" }}
-          >
-            <Box
-              w="52px"
-              h="52px"
-              bg="#9E00FF"
-              borderRadius="50px"
-              boxShadow="0px 0px 50px #9E00FF"
-              display={{ base: "none", xl: "initial" }}
-            />
+        <Flex
+          flexDirection="row"
+          alignItems="center"
+          justifyContent={{ base: "center", xl: "space-between" }}
+          h="150px"
+          w={{ base: "100%", sm: "467px" }}
+          position="relative"
+          top="0"
+          left={{ base: "0", xl: "18rem" }}
+        >
+          <Box
+            w="52px"
+            h="52px"
+            bg="#9E00FF"
+            borderRadius="50px"
+            boxShadow="0px 0px 50px #9E00FF"
+            display={{ base: "none", xl: "initial" }}
+          />
+          <AnimationRight>
             <Flex
               flexDirection="column"
               alignItems={{ base: "center", xl: "flex-start" }}
@@ -222,8 +222,8 @@ function HowLearn() {
                 condição de novo com preços bem mais acessiveis.
               </Text>
             </Flex>
-          </Flex>
-        </AnimationRight>
+          </AnimationRight>
+        </Flex>
       </Flex>
       <Box w={{ base: "90%", md: "100%" }}>
         <AnimationComp>
