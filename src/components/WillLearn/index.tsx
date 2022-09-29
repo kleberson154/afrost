@@ -63,11 +63,9 @@ function WillLearn() {
       <Flex
         flexWrap={{ base: "unset", md: "wrap" }}
         flexDirection={{ base: "column", md: "unset" }}
+        justifyContent="center"
         alignItems="center"
-        gap={{ base: 4, md: 0 }}
-        alignContent="space-between"
-        justifyContent="space-between"
-        h={{ base: "1581px", sm: "1108px", md: "575px" }}
+        gap={{ base: 4, md: 8 }}
         w="100%"
         mt={12}
         mb={28}
@@ -87,7 +85,8 @@ function WillLearn() {
                   borderRadius="10px"
                   p="40px 15px 40px 40px"
                   h={{ base: "368px", sm: "276px" }}
-                  w={{ base: "100%", sm: "384px" }}
+                  w="100%"
+                  maxW="360px"
                   overflow="hidden"
                   key={Learn.id}
                 >
