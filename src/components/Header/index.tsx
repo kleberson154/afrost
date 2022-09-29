@@ -1,4 +1,11 @@
-import { Button, Flex, Icon, Box, useColorMode } from "@chakra-ui/react";
+import {
+  Button,
+  Flex,
+  Icon,
+  Box,
+  useColorMode,
+  LightMode,
+} from "@chakra-ui/react";
 import { AfrostIcon } from "../AfrostLogo";
 import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
@@ -14,7 +21,7 @@ function Nav() {
         ml={{ base: "2rem", lg: "" }}
       />
       <Flex flexDirection="column" mr={{ base: "2rem", lg: "" }}>
-        <Button variant="primary" display={{ base: "none", md: "initial" }}>
+        <Button variant="secondary" display={{ base: "none", md: "initial" }}>
           quero assistir online de forma gratuita
         </Button>
         <Flex justifyContent="flex-end" position="relative">

@@ -123,12 +123,7 @@ function Challenge() {
         </AnimationComp>
 
         <AnimationComp>
-          <Button
-            variant="secondary"
-            fontSize={{ base: "x-small", sm: "sm", md: "xl", lg: "2xl" }}
-            w="100%"
-            h={{ base: 14, md: 20 }}
-          >
+          <Button variant="primary" w="100%">
             <Icon
               as={FaTelegramPlane}
               fontSize={{ base: "1.5rem", md: "2rem" }}

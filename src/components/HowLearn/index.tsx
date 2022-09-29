@@ -14,6 +14,7 @@ import AnimationRight from "../AnimationRight";
 import AnimationLeft from "../AnimationLeft";
 
 function HowLearn() {
+  const { colorMode } = useColorMode();
   return (
     <>
       <AnimationComp>
@@ -61,7 +62,7 @@ function HowLearn() {
               flexDirection="column"
               alignItems={{ base: "center", xl: "flex-end" }}
               textAlign={{ base: "center", xl: "right" }}
-              w="369px"
+              w={{ base: "100%", sm: "369px" }}
             >
               <Heading fontSize="2xl" mb="10px">
                 01. Ser
@@ -84,10 +85,8 @@ function HowLearn() {
           position="relative"
           transform="rotate(45deg)"
           display={{ base: "none", xl: "initial" }}
-          borderRadius="50px"
-          __css={{
-            bgGradient: "linear(to-r, #0066FF, #FF00B8)",
-          }}
+          bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #0066FF, #FF00B8)`}
+          bgSize="16px 2px, 100% 2px"
         />
         <AnimationRight>
           <Flex
@@ -112,7 +111,7 @@ function HowLearn() {
               flexDirection="column"
               alignItems={{ base: "center", xl: "flex-start" }}
               textAlign={{ base: "center", xl: "left" }}
-              w="369px"
+              w={{ base: "100%", sm: "369px" }}
             >
               <Heading fontSize="2xl" mb="10px">
                 02. Fazer
@@ -134,10 +133,8 @@ function HowLearn() {
           position="relative"
           transform="rotate(-45deg)"
           display={{ base: "none", xl: "initial" }}
-          borderRadius="50px"
-          __css={{
-            bgGradient: "linear(to-r, #6EBC00, #FF00B8)",
-          }}
+          bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #FF00B8, #6EBC00)`}
+          bgSize="16px 2px, 100% 2px"
         />
         <AnimationLeft>
           <Flex
@@ -162,7 +159,7 @@ function HowLearn() {
               flexDirection="column"
               alignItems={{ base: "center", xl: "flex-end" }}
               textAlign={{ base: "center", xl: "right" }}
-              w="369px"
+              w={{ base: "100%", sm: "369px" }}
             >
               <Heading fontSize="2xl" mb="10px">
                 03. Ter
@@ -185,10 +182,8 @@ function HowLearn() {
           position="relative"
           transform="rotate(45deg)"
           display={{ base: "none", xl: "initial" }}
-          borderRadius="50px"
-          __css={{
-            bgGradient: "linear(to-r, #6EBC00, #9E00FF)",
-          }}
+          bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #6EBC00, #9E00FF)`}
+          bgSize="16px 2px, 100% 2px"
         />
         <AnimationRight>
           <Flex
@@ -213,7 +208,7 @@ function HowLearn() {
               flexDirection="column"
               alignItems={{ base: "center", xl: "flex-start" }}
               textAlign={{ base: "center", xl: "left" }}
-              w="369px"
+              w={{ base: "100%", sm: "369px" }}
             >
               <Heading fontSize="2xl" mb="10px">
                 04. Ter
@@ -232,12 +227,7 @@ function HowLearn() {
       </Flex>
       <Box w={{ base: "90%", md: "100%" }}>
         <AnimationComp>
-          <Button
-            variant="secondary"
-            fontSize={{ base: "x-small", sm: "sm", md: "xl", lg: "2xl" }}
-            w="100%"
-            h={{ base: 14, md: 20 }}
-          >
+          <Button variant="primary" w="100%">
             <Icon
               as={FaTelegramPlane}
               fontSize={{ base: "1.5rem", md: "2rem" }}

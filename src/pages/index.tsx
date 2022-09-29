@@ -10,7 +10,7 @@ import AnimationComp from "../components/AnimationComp";
 import HowLearn from "../components/HowLearn";
 
 const Home: NextPage = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <Box bg={`brand.${colorMode}.background`} minH="480vh">
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
         flexDirection="column"
         alignItems="center"
         maxW={{ base: "500px", md: "800px" }}
-        px={3.75}
+        px={4}
         mx="auto"
         zIndex="3"
       >

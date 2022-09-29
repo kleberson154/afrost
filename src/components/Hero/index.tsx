@@ -82,12 +82,7 @@ function Hero() {
 
       <Icon as={BsArrowDown} fontSize="2rem" color="brand.green" my={8} />
 
-      <Button
-        variant="secondary"
-        fontSize={{ base: "x-small", sm: "sm", md: "xl", lg: "2xl" }}
-        w={{ base: "90%", md: "100%" }}
-        h={{ base: 14, md: 20 }}
-      >
+      <Button variant="primary" w={{ base: "90%", md: "100%" }}>
         <Icon
           as={FaTelegramPlane}
           fontSize={{ base: "1.5rem", md: "2rem" }}

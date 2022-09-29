@@ -14,24 +14,32 @@ import AnimationDelay from "../AnimationDelay";
 function About() {
   const { colorMode, toggleColorMode } = useColorMode();
 
-  const Card = [
+  const cards = [
     {
       id: 1,
+      colorOne: "#0066FF",
+      colorTwo: "#6EBC00",
       title: "+4 mil",
       description: "Parceiros Afrost no Brasil",
     },
     {
       id: 2,
+      colorOne: "#FF00B8",
+      colorTwo: "#9E00FF",
       title: "+18 mil",
       description: "Envios feitos",
     },
     {
       id: 3,
+      colorOne: "#6EBC00",
+      colorTwo: "#0066FF",
       title: "+4 anos",
       description: "Experiência no mercado",
     },
     {
       id: 4,
+      colorOne: "#9E00FF",
+      colorTwo: "#0066FF",
       title: "+28 milhões",
       description: "Faturados",
     },
@@ -62,12 +70,12 @@ function About() {
             h={{ base: "472px", md: "244px" }}
             w="100%"
           >
-            {Card.map((Card: any) => {
+            {cards.map(card => {
               return (
                 <AnimationDelay>
                   <Flex
-                    key={Card.id}
-                    bgGradient="linear-gradient(to right, #0066FF, #6EBC00) border-box"
+                    key={card.id}
+                    bgGradient={`linear-gradient(to right, ${card.colorOne}, ${card.colorTwo}) border-box`}
                     boxShadow="0 0 10px bgGradient"
                     h="106px"
                     w={{ base: "90%", md: "369px" }}
@@ -86,17 +94,17 @@ function About() {
                     >
                       <Text
                         as="span"
-                        bgGradient="linear(to-r, #0066FF 0%, #6EBC00 30%)"
+                        bgGradient={`linear-gradient(to right, ${card.colorOne} 0%, ${card.colorTwo} 30%)`}
                         bgClip="text"
                         fontSize="3xl"
                         fontWeight={700}
                         lineHeight="auto"
                         ml={4}
                       >
-                        {Card.title}
+                        {card.title}
                       </Text>
                       <Text ml={4} fontSize="md" fontWeight={600}>
-                        {Card.description}
+                        {card.description}
                       </Text>
                     </Flex>
                   </Flex>
@@ -143,12 +151,7 @@ function About() {
         </Flex>
 
         <AnimationComp>
-          <Button
-            variant="secondary"
-            fontSize={{ base: "x-small", sm: "sm", md: "xl", lg: "2xl" }}
-            w="100%"
-            h={{ base: 14, md: 20 }}
-          >
+          <Button variant="primary" w="100%">
             <Icon
               as={FaTelegramPlane}
               fontSize={{ base: "1.5rem", md: "2rem" }}

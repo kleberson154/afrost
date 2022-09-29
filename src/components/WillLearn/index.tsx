@@ -5,6 +5,7 @@ import {
   Flex,
   Text,
   Image,
+  Icon,
 } from "@chakra-ui/react";
 import AnimationComp from "../AnimationComp";
 import AnimationDelay from "../AnimationDelay";
@@ -78,15 +79,15 @@ function WillLearn() {
                 <Flex
                   position="relative"
                   flexDirection="column"
-                  justifyContent="space-between"
-                  alignItems="center"
+                  justifyContent="flex-start"
+                  alignItems="flex-start"
                   bg={colorMode}
                   border="2px solid "
                   borderColor={colorMode === "dark" ? "#12141F" : "#CCCCCC"}
                   borderRadius="10px"
-                  p={10}
+                  p="40px 15px 40px 40px"
                   h={{ base: "368px", sm: "276px" }}
-                  w={{ base: "279px", sm: "384px" }}
+                  w={{ base: "100%", sm: "384px" }}
                   overflow="hidden"
                   key={Learn.id}
                 >
@@ -101,10 +102,18 @@ function WillLearn() {
                     borderRadius="100px"
                     zIndex="-1"
                   />
-                  <Flex mb={6} w="100%">
-                    <Image src={Learn.image} h={10} w={10} />
+                  <Flex
+                    w="40px"
+                    h="40px"
+                    bg={`brand.${colorMode}.background`}
+                    justifyContent="center"
+                    alignItems="center"
+                    borderRadius="100px"
+                    boxShadow={`inset 0px 0px 10px ${Learn.color}`}
+                  >
+                    <Image src={Learn.image} />
                   </Flex>
-                  <Flex flexDirection="column" gap={4}>
+                  <Flex flexDirection="column" gap={4} h="121px" mt="24px">
                     <Heading fontSize="2xl" fontWeight={700} lineHeight="auto">
                       {Learn.heading}
                     </Heading>
