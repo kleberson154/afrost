@@ -47,7 +47,7 @@ const Home: NextPage = () => {
         maxW="1200px"
         px={3.75}
         mx="auto"
-        mb={28}
+        mb={{ base: 24, sm: 28 }}
         zIndex="3"
       >
         <motion.div

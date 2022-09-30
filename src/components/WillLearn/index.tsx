@@ -84,7 +84,7 @@ function WillLearn() {
                   borderColor={colorMode === "dark" ? "#12141F" : "#CCCCCC"}
                   borderRadius="10px"
                   p="40px 15px 40px 40px"
-                  h={{ base: "368px", sm: "276px" }}
+                  h={{ base: "330px", sm: "276px" }}
                   w="100%"
                   maxW="360px"
                   overflow="hidden"

@@ -41,8 +41,8 @@ function Hero() {
         width="100%"
         lineHeight="120%"
         color={`brand.${colorMode}.text`}
-        mt={12}
-        mb={{ base: 14, md: 24 }}
+        mt={{ base: 6, sm: 12 }}
+        mb={{ base: 6, sm: 24 }}
       >
         Do zero
         <br />
@@ -60,7 +60,7 @@ function Hero() {
         <Box
           fontWeight={900}
           fontSize={{ base: "xl", md: "3xl" }}
-          mb={8}
+          mb={{ base: 4, sm: 8 }}
           textAlign="center"
           lineHeight="auto"
         >
@@ -80,7 +80,12 @@ function Hero() {
         </Text>
       </Box>
 
-      <Icon as={BsArrowDown} fontSize="2rem" color="brand.green" my={8} />
+      <Icon
+        as={BsArrowDown}
+        fontSize="2rem"
+        color="brand.green"
+        my={{ base: 4, sm: 8 }}
+      />
 
       <Button variant="primary" w={{ base: "90%", md: "100%" }}>
         <Icon

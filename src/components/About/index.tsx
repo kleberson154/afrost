@@ -78,7 +78,7 @@ function About() {
                     bgGradient={`linear-gradient(to right, ${card.colorOne}, ${card.colorTwo}) border-box`}
                     boxShadow="0 0 10px bgGradient"
                     h="106px"
-                    w={{ base: "90%", md: "369px" }}
+                    w={{ base: "100%", md: "369px" }}
                     alignItems="center"
                     justifyContent="center"
                     borderRadius="12px"
