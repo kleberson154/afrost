@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <Box bg={`brand.${colorMode}.background`} minH="480vh">
+    <Box bg={`brand.${colorMode}.background`} minH="480vh" overflowX="hidden">
       <Flex justifyContent="center">
         <Box
           position="absolute"
