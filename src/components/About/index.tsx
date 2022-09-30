@@ -154,7 +154,7 @@ function About() {
 
         <AnimationComp>
           <Button onClick={onOpen} variant="primary" w="100%">
-            <Modal isOpen={isOpen} onClose={onClose}>
+            <Modal isCentered isOpen={isOpen} onClose={onClose}>
               <Form />
             </Modal>
             <Icon

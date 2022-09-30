@@ -52,7 +52,7 @@ function Hero() {
         <Text
           as="strong"
           fontWeight={900}
-          bgGradient="linear(to right, brand.green, brand.purple)"
+          bg="brand.green"
           backgroundClip="text"
         >
           aos 10 Milhões
@@ -68,11 +68,7 @@ function Hero() {
           lineHeight="auto"
         >
           Descubra o passo a passo que percorremos para faturar mais de{" "}
-          <Text
-            as="span"
-            bgGradient="linear(to-r, brand.green, brand.purple)"
-            bgClip="text"
-          >
+          <Text as="span" bg="brand.green" bgClip="text">
             R$ 10 milhões com um negócio de iPhones
           </Text>{" "}
           (começando do absoluto zero).

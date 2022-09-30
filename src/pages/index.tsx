@@ -43,7 +43,7 @@ const Home: NextPage = () => {
       <Flex
         w="100%"
         flexDirection="column"
-        pt={16}
+        pt={{ base: 8, sm: 16 }}
         maxW="1200px"
         px={3.75}
         mx="auto"

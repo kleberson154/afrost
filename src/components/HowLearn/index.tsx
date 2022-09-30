@@ -231,7 +231,7 @@ function HowLearn() {
       <Box w={{ base: "90%", md: "100%" }}>
         <AnimationComp>
           <Button onClick={onOpen} variant="primary" w="100%">
-            <Modal isOpen={isOpen} onClose={onClose}>
+            <Modal isCentered isOpen={isOpen} onClose={onClose}>
               <Form />
             </Modal>
             <Icon
