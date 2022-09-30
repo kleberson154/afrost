@@ -28,6 +28,7 @@ function Nav() {
           <Button
             maxW="90px"
             maxH="40px"
+            bg={colorMode === "dark" ? "#252622" : "#E5E5E5"}
             p="2.5"
             borderRadius="50px"
             position="relative"

@@ -3,16 +3,19 @@ import {
   Button,
   Heading,
   useColorMode,
+  useDisclosure,
   Flex,
   Text,
   Icon,
+  Modal,
 } from "@chakra-ui/react";
 import { BsArrowDown } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
-import AnimationComp from "../AnimationComp";
+import Form from "../Form";
 
 function Hero() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
+  const { onOpen, isOpen, onClose } = useDisclosure();
   return (
     <Flex
       flexDir="column"
@@ -87,7 +90,14 @@ function Hero() {
         my={{ base: 4, sm: 8 }}
       />
 
-      <Button variant="primary" w={{ base: "90%", md: "100%" }}>
+      <Button
+        onClick={onOpen}
+        variant="primary"
+        w={{ base: "90%", md: "100%" }}
+      >
+        <Modal isCentered isOpen={isOpen} onClose={onClose}>
+          <Form />
+        </Modal>
         <Icon
           as={FaTelegramPlane}
           fontSize={{ base: "1.5rem", md: "2rem" }}

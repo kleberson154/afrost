@@ -6,15 +6,18 @@ import {
   Text,
   Button,
   Icon,
+  useDisclosure,
+  Modal,
 } from "@chakra-ui/react";
 import AnimationComp from "../AnimationComp";
 import { FaTelegramPlane } from "react-icons/fa";
-import AnimationDelay from "../AnimationDelay";
+import Form from "../Form";
 import AnimationRight from "../AnimationRight";
 import AnimationLeft from "../AnimationLeft";
 
 function HowLearn() {
   const { colorMode } = useColorMode();
+  const { onOpen, isOpen, onClose } = useDisclosure();
   return (
     <>
       <AnimationComp>
@@ -227,7 +230,10 @@ function HowLearn() {
       </Flex>
       <Box w={{ base: "90%", md: "100%" }}>
         <AnimationComp>
-          <Button variant="primary" w="100%">
+          <Button onClick={onOpen} variant="primary" w="100%">
+            <Modal isOpen={isOpen} onClose={onClose}>
+              <Form />
+            </Modal>
             <Icon
               as={FaTelegramPlane}
               fontSize={{ base: "1.5rem", md: "2rem" }}

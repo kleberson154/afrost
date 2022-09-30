@@ -1,10 +1,19 @@
-import { Button, Heading, Flex, Text, Icon } from "@chakra-ui/react";
+import {
+  Button,
+  Heading,
+  Flex,
+  Text,
+  Icon,
+  useDisclosure,
+  Modal,
+} from "@chakra-ui/react";
 import { MdArrowForwardIos } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
-import { motion } from "framer-motion";
+import Form from "../Form";
 import AnimationComp from "../AnimationComp";
 
 function Challenge() {
+  const { onOpen, isOpen, onClose } = useDisclosure();
   return (
     <>
       <AnimationComp>
@@ -123,7 +132,10 @@ function Challenge() {
         </AnimationComp>
 
         <AnimationComp>
-          <Button variant="primary" w="100%">
+          <Button onClick={onOpen} variant="primary" w="100%">
+            <Modal isOpen={isOpen} onClose={onClose}>
+              <Form />
+            </Modal>
             <Icon
               as={FaTelegramPlane}
               fontSize={{ base: "1.5rem", md: "2rem" }}

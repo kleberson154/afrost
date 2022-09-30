@@ -1,19 +1,21 @@
 import {
-  Box,
   Button,
   Heading,
   useColorMode,
+  useDisclosure,
   Flex,
   Text,
   Icon,
+  Modal,
 } from "@chakra-ui/react";
 import { FaTelegramPlane } from "react-icons/fa";
 import AnimationComp from "../AnimationComp";
 import AnimationDelay from "../AnimationDelay";
+import Form from "../Form";
 
 function About() {
   const { colorMode, toggleColorMode } = useColorMode();
-
+  const { onOpen, isOpen, onClose } = useDisclosure();
   const cards = [
     {
       id: 1,
@@ -151,7 +153,10 @@ function About() {
         </Flex>
 
         <AnimationComp>
-          <Button variant="primary" w="100%">
+          <Button onClick={onOpen} variant="primary" w="100%">
+            <Modal isOpen={isOpen} onClose={onClose}>
+              <Form />
+            </Modal>
             <Icon
               as={FaTelegramPlane}
               fontSize={{ base: "1.5rem", md: "2rem" }}
