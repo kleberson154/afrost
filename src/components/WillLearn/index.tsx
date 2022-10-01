@@ -6,12 +6,18 @@ import {
   Text,
   Image,
   Icon,
+  Modal,
+  Button,
+  useDisclosure,
 } from "@chakra-ui/react";
 import AnimationComp from "../AnimationComp";
 import AnimationDelay from "../AnimationDelay";
+import { FaTelegramPlane } from "react-icons/fa";
+import Form from "../Form";
 
 function WillLearn() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const { onOpen, isOpen, onClose } = useDisclosure();
 
   const Learn = [
     {
@@ -125,6 +131,22 @@ function WillLearn() {
             </>
           );
         })}
+        <Box mt={16} w={{ base: "90%", md: "100%" }}>
+          <AnimationComp>
+            <Button onClick={onOpen} variant="primary" w="100%">
+              <Modal isCentered isOpen={isOpen} onClose={onClose}>
+                <Form />
+              </Modal>
+              <Icon
+                as={FaTelegramPlane}
+                fontSize={{ base: "1.5rem", md: "2rem" }}
+                mr={{ base: 2, md: 4 }}
+                color="#fff"
+              />
+              Quero participar gratuitamente
+            </Button>
+          </AnimationComp>
+        </Box>
       </Flex>
     </>
   );

@@ -48,14 +48,16 @@ function Form() {
     resolver: yupResolver(schema),
   });
   const onSubmit = handleSubmit(data => {
+    window.location.href = "https://t.me/+wpxbiGljX804NmEx";
     console.log(data);
   });
   return (
     <>
       <ModalOverlay />
       <ModalContent
-        w="480px"
-        h="555px"
+        h="max-content"
+        py="3px"
+        pl="1px"
         borderRadius="10px"
         alignItems="center"
         justifyContent="center"
@@ -63,11 +65,10 @@ function Form() {
       >
         <Flex
           w="99%"
-          h="99%"
           flexDirection="column"
           bg={`brand.${colorMode}.background`}
           p="30px 30px 56px 40px"
-          borderRadius="7px"
+          borderRadius="8px"
         >
           <ModalHeader textAlign="center" mb={12}>
             <AfrostIcon

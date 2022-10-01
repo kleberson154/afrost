@@ -4,14 +4,17 @@ import {
   Icon,
   Box,
   useColorMode,
-  LightMode,
+  useDisclosure,
+  Modal,
 } from "@chakra-ui/react";
 import { AfrostIcon } from "../AfrostLogo";
 import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
+import Form from "../Form";
 
 function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const { onOpen, isOpen, onClose } = useDisclosure();
   return (
     <Flex justifyContent="space-between" alignItems="flex-start">
       <AfrostIcon
@@ -21,7 +24,14 @@ function Nav() {
         ml={{ base: "2rem", lg: "" }}
       />
       <Flex flexDirection="column" mr={{ base: "2rem", lg: "" }}>
-        <Button variant="secondary" display={{ base: "none", md: "initial" }}>
+        <Button
+          onClick={onOpen}
+          variant="secondary"
+          display={{ base: "none", md: "initial" }}
+        >
+          <Modal isCentered isOpen={isOpen} onClose={onClose}>
+            <Form />
+          </Modal>
           quero assistir online de forma gratuita
         </Button>
         <Flex justifyContent="flex-end" position="relative">

@@ -43,7 +43,7 @@ function About() {
       colorOne: "#9E00FF",
       colorTwo: "#0066FF",
       title: "+28 milhões",
-      description: "Faturados",
+      description: "Faturados por nossos parceiros",
     },
   ];
   return (
@@ -146,7 +146,7 @@ function About() {
           </AnimationComp>
           <AnimationComp>
             <Text>
-              Depois de alcançar um faturamento superior a R$ 20 milhões, chegou
+              Depois de alcançar um faturamento superior a R$ 10 milhões, chegou
               a hora de impulsionar outras empresas e empreendedores.
             </Text>
           </AnimationComp>
