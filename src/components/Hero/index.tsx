@@ -24,8 +24,7 @@ function Hero() {
       maxW={{ base: "500px", md: "800px" }}
     >
       <Text
-        bgGradient="linear(90deg, #6EBC00 20.83%, #807AD0 74.48%)"
-        bgClip="text"
+        bg={`brand.${colorMode}.color`}
         fontSize={{ base: "md", md: "2xl" }}
         fontWeight={700}
         textTransform="uppercase"
@@ -33,45 +32,52 @@ function Hero() {
         Desafio Afrost
       </Text>
 
-      <Text fontSize={{ base: "md", md: "2xl" }} textTransform="uppercase">
-        On-line & Gratuito
+      <Text
+        fontSize={{ base: "md", md: "2xl" }}
+        textTransform="uppercase"
+        gap={2}
+      >
+        On-line &{" "}
+        <Text
+          as="span"
+          bgGradient="linear(90deg, #0066FF 20.83%, #FF00B8 74.48%)"
+          bgClip="text"
+          fontSize={{ base: "md", md: "2xl" }}
+          textTransform="uppercase"
+        >
+          Gratuito
+        </Text>
       </Text>
 
       <Heading
         fontWeight={900}
-        fontSize={{ base: "4xl", md: "5xl" }}
+        fontSize={{ base: "larger", md: "3xl" }}
         textAlign="center"
         width="100%"
         lineHeight="120%"
-        color={`brand.${colorMode}.text`}
-        mt={{ base: 6, sm: 12 }}
-        mb={{ base: 6, sm: 24 }}
+        color={`brand.${colorMode}.color`}
+        mt={{ base: 8, sm: 12 }}
+        mb={{ base: 8, sm: 9 }}
       >
-        Do zero
-        <br />
-        <Text
-          as="strong"
-          fontWeight={900}
-          bg="brand.green"
-          backgroundClip="text"
-        >
-          aos 10 Milhões
+        O sucesso está em desvendar os segredos e aplicá-los.{" "}
+        <Text as="span" fontWeight={400}>
+          Que bom que eu fiz isso por você…
         </Text>
       </Heading>
 
       <Box w={{ base: "80%", md: "100%" }}>
         <Box
           fontWeight={900}
-          fontSize={{ base: "xl", md: "3xl" }}
+          fontSize={{ base: "2xl", md: "5xl" }}
           mb={{ base: 4, sm: 8 }}
           textAlign="center"
           lineHeight="auto"
         >
-          Descubra o passo a passo que percorremos para faturar mais de{" "}
-          <Text as="span" bg="brand.green" bgClip="text">
-            R$ 10 milhões com um negócio de iPhones
+          Aprenda comigo como faturar{" "}
+          <Text bg="brand.green" bgClip="text">
+            mais de 1 milhão com um négocio de iPhones
           </Text>{" "}
-          (começando do absoluto zero).
+          (começando do zero)
         </Box>
 
         <Text fontSize={{ base: "md", md: "x-large" }} textAlign="center">

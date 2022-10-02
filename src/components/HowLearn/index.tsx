@@ -37,17 +37,17 @@ function HowLearn() {
         gap={{ base: 4, md: 0 }}
         alignContent="flex-start"
         justifyContent={{ base: "space-between", xl: "center" }}
-        h={{ base: "908px", xl: "620px" }}
+        h={{ base: "1600px", xl: "945px" }}
         w={{ base: "90%", md: "100%" }}
-        mt={12}
-        mb={28}
+        mt={28}
       >
         <Flex
           flexDirection="row-reverse"
           alignItems="center"
           justifyContent={{ base: "center", xl: "space-between" }}
-          h="150px"
+          h="274px"
           w={{ base: "100%", sm: "467px" }}
+          mt={{ base: "2rem", sm: "0" }}
           position="relative"
           top="0"
           right={{ base: "0", xl: "18rem" }}
@@ -59,6 +59,8 @@ function HowLearn() {
             borderRadius="50px"
             boxShadow="0px 0px 50px #0066FF"
             display={{ base: "none", xl: "initial" }}
+            position="relative"
+            top={{ base: "0", xl: "-125px" }}
           />
           <AnimationLeft>
             <Flex
@@ -67,26 +69,46 @@ function HowLearn() {
               textAlign={{ base: "center", xl: "right" }}
               w={{ base: "100%", sm: "369px" }}
             >
-              <Heading fontSize="2xl" mb="10px">
-                01. Ser
-              </Heading>
-              <Box bgGradient="linear(transparent 50%,  #0066FF 50%)">
-                <Heading fontSize="2xl">iPhone é devolvido</Heading>
+              <Box bgGradient="linear(transparent 50%,  #0066FF 50%)" mb="10px">
+                <Heading fontSize="2xl">01. Ser</Heading>
               </Box>
+              <Heading fontSize="2xl" w="90%">
+                Aprenda a dominar o poder do seu cérebro e construa uma
+                mentalidade F*DA!
+              </Heading>
 
-              <Text fontSize="md" mt={4} lineHeight="auto" w="100%">
-                Os iPhones novos são vendidos para compradores, que depois
-                desistem da compra ou devolvem o aparelho em estado de novo para
-                a Apple.
-              </Text>
+              <Flex
+                flexDirection="column"
+                fontSize="md"
+                fontStyle="italic"
+                mt={4}
+                gap="26px"
+                lineHeight="auto"
+                w="100%"
+              >
+                <Text>
+                  Você receberá pílulas diárias durante 21 dias, por meio de um
+                  canal exclusivo e fechado no Telegram.
+                </Text>
+                <Text>
+                  Essas pílulas irão expandir o seu conhecimento, que expandirá
+                  sua percepção da realidade.
+                </Text>
+                <Text>
+                  Tudo isso vai gerar novas maneiras de pensar, que vai levar
+                  você para o mesmo caminho que eu percorri antes de chegar até
+                  aqui…
+                </Text>
+              </Flex>
             </Flex>
           </AnimationLeft>
         </Flex>
         <Box
           h="5px"
-          w={40}
+          w="190px"
           position="relative"
-          transform="rotate(45deg)"
+          top="-157px"
+          transform="rotate(52deg)"
           display={{ base: "none", xl: "initial" }}
           bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #0066FF, #FF00B8)`}
           bgSize="16px 2px, 100% 2px"
@@ -97,9 +119,10 @@ function HowLearn() {
           justifyContent={{ base: "center", xl: "space-between" }}
           h="150px"
           w={{ base: "100%", sm: "467px" }}
-          position="relative"
-          top="0"
+          mt={{ base: "6rem", sm: "0" }}
           left={{ base: "0", xl: "18rem" }}
+          position="relative"
+          top={{ base: "0", xl: "-55px" }}
         >
           <Box
             w="52px"
@@ -108,6 +131,8 @@ function HowLearn() {
             borderRadius="50px"
             boxShadow="0px 0px 50px #FF00B8"
             display={{ base: "none", xl: "initial" }}
+            position="relative"
+            top={{ base: "0", xl: "-75px" }}
           />
           <AnimationRight>
             <Flex
@@ -116,25 +141,39 @@ function HowLearn() {
               textAlign={{ base: "center", xl: "left" }}
               w={{ base: "100%", sm: "369px" }}
             >
-              <Heading fontSize="2xl" mb="10px">
-                02. Fazer
-              </Heading>
-              <Box bgGradient="linear(transparent 50%,  #FF00B8 50%)">
-                <Heading fontSize="2xl">Inspeção</Heading>
+              <Box bgGradient="linear(transparent 50%,  #FF00B8 50%)" mb="10px">
+                <Heading fontSize="2xl">02. Fazer</Heading>
               </Box>
+              <Heading fontSize="2xl" w="80%">
+                Transformando sua mentalidade em um império
+              </Heading>
 
-              <Text fontSize="md" mt={4} lineHeight="auto" w="100%">
-                O aparelho é inspecionado, testado e certificado pela
-                CheckPhone, a maior certificadora de celulares do planeta
-              </Text>
+              <Flex
+                flexDirection="column"
+                fontSize="md"
+                fontStyle="italic"
+                mt={4}
+                gap="26px"
+                lineHeight="auto"
+                w="100%"
+              >
+                <Text>
+                  Meu nome é Angeliny Weffort, eu sou CEO da Afrost e pela
+                  primeira vez eu irei revelar os passos que percorri para
+                  alcançar os 10 milhões em faturamento com um negócio de iPhone
+                  que iniciei com 17 anos…
+                </Text>
+                <Text>…começando 100% do zero.</Text>
+              </Flex>
             </Flex>
           </AnimationRight>
         </Flex>
         <Box
           h="5px"
-          w={40}
+          w="190px"
           position="relative"
-          transform="rotate(-45deg)"
+          top="-100px"
+          transform="rotate(128deg)"
           display={{ base: "none", xl: "initial" }}
           bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #FF00B8, #6EBC00)`}
           bgSize="16px 2px, 100% 2px"
@@ -143,10 +182,11 @@ function HowLearn() {
           flexDirection="row-reverse"
           alignItems="center"
           justifyContent={{ base: "center", xl: "space-between" }}
-          h="150px"
+          h="353px"
           w={{ base: "100%", sm: "467px" }}
+          mt={{ base: "4rem", sm: "0" }}
           position="relative"
-          top="0"
+          top={{ base: "0", xl: "-50px" }}
           right={{ base: "0", xl: "18rem" }}
         >
           <Box
@@ -156,6 +196,8 @@ function HowLearn() {
             borderRadius="50px"
             boxShadow="0px 0px 50px #6EBC00"
             display={{ base: "none", xl: "initial" }}
+            position="relative"
+            top={{ base: "0", xl: "-125px" }}
           />
           <AnimationLeft>
             <Flex
@@ -163,27 +205,47 @@ function HowLearn() {
               alignItems={{ base: "center", xl: "flex-end" }}
               textAlign={{ base: "center", xl: "right" }}
               w={{ base: "100%", sm: "369px" }}
+              position="relative"
             >
-              <Heading fontSize="2xl" mb="10px">
-                03. Ter
-              </Heading>
-              <Box bgGradient="linear(transparent 50%,  #6EBC00 50%)">
-                <Heading fontSize="2xl">Fornecimento</Heading>
+              <Box bgGradient="linear(transparent 50%,  #6EBC00 50%)" mb="10px">
+                <Heading fontSize="2xl">03. Ter</Heading>
               </Box>
+              <Heading fontSize="2xl" w="90%">
+                O grande dia! Todas suas ações convertidas em money!
+              </Heading>
 
-              <Text fontSize="md" mt={4} lineHeight="auto" w="100%">
-                O iPhone depois de certificado, vem para a Afrost que fornece o
-                iPhone em estado de novo por um preço bem mais acessivel para o
-                revendedor
-              </Text>
+              <Flex
+                flexDirection="column"
+                fontSize="md"
+                fontStyle="italic"
+                mt={4}
+                gap="26px"
+                lineHeight="auto"
+                w="100%"
+              >
+                <Text>
+                  Terminará esses 21 dias com uma mentalidade “mindset”
+                  milionário. Sendo capaz de conquistar qualquer objetivo que se
+                  propor.
+                </Text>
+                <Text>
+                  Você entenderá como funciona o mercado de iPhones e como você
+                  pode iniciar seu negócio e terminar o ano faturando pelo menos
+                  15 mil reais por mês.
+                </Text>
+                <Text>
+                  Essa é uma série 100% gratuita (por enquanto, pelo menos)
+                </Text>
+              </Flex>
             </Flex>
           </AnimationLeft>
         </Flex>
         <Box
           h="5px"
-          w={40}
+          w="190px"
           position="relative"
-          transform="rotate(45deg)"
+          top="-254px"
+          transform="rotate(50deg)"
           display={{ base: "none", xl: "initial" }}
           bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #6EBC00, #9E00FF)`}
           bgSize="16px 2px, 100% 2px"
@@ -194,9 +256,10 @@ function HowLearn() {
           justifyContent={{ base: "center", xl: "space-between" }}
           h="150px"
           w={{ base: "100%", sm: "467px" }}
-          position="relative"
-          top="0"
+          mt={{ base: "4rem", sm: "0" }}
           left={{ base: "0", xl: "18rem" }}
+          position="relative"
+          top={{ base: "-95", xl: "-207" }}
         >
           <Box
             w="52px"
@@ -205,6 +268,8 @@ function HowLearn() {
             borderRadius="50px"
             boxShadow="0px 0px 50px #9E00FF"
             display={{ base: "none", xl: "initial" }}
+            position="relative"
+            top={{ base: "0", xl: "-25px" }}
           />
           <AnimationRight>
             <Flex
@@ -213,17 +278,25 @@ function HowLearn() {
               textAlign={{ base: "center", xl: "left" }}
               w={{ base: "100%", sm: "369px" }}
             >
-              <Heading fontSize="2xl" mb="10px">
-                04. Ter
-              </Heading>
-              <Box bgGradient="linear(transparent 50%,  #9E00FF 50%)">
-                <Heading fontSize="2xl">Lucros altos</Heading>
+              <Box bgGradient="linear(transparent 50%,  #9E00FF 50%)" mb="10px">
+                <Heading fontSize="2xl">04. Sucesso</Heading>
               </Box>
+              <Heading fontSize="2xl">
+                O dia onde você será um vitorioso
+              </Heading>
 
-              <Text fontSize="md" mt={4} lineHeight="auto" w="100%">
-                Você lucra alto e o seu consumidor final ganha um iPhone em
-                condição de novo com preços bem mais acessiveis.
-              </Text>
+              <Flex
+                flexDirection="column"
+                fontSize="md"
+                fontStyle="italic"
+                mt={4}
+                gap="26px"
+                lineHeight="auto"
+                w="100%"
+              >
+                Aqui você colherá todas as sementes plantadas ao longo do
+                caminho
+              </Flex>
             </Flex>
           </AnimationRight>
         </Flex>
