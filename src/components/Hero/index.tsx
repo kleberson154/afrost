@@ -40,7 +40,7 @@ function Hero() {
         On-line &{" "}
         <Text
           as="span"
-          bgGradient="linear(90deg, #0066FF 20.83%, #FF00B8 74.48%)"
+          bgGradient="linear(90deg, brand.blue 20.83%, brand.pink 74.48%)"
           bgClip="text"
           fontSize={{ base: "md", md: "2xl" }}
           textTransform="uppercase"

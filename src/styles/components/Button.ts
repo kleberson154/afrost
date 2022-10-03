@@ -8,7 +8,7 @@ export const Button: ComponentStyleConfig = {
       height: { base: 14, md: 20 },
       whiteSpace: "normal",
       color: "#fff",
-      bgGradient: "linear(90deg, #0066FF 20.83%, #FF00B8 74.48%)",
+      bgGradient: "linear(90deg, brand.blue 20.83%, brand.pink 74.48%)",
       fontWeight: "700",
       cursor: "pointer",
       _hover: {

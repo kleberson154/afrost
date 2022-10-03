@@ -18,7 +18,7 @@ function Nav() {
   return (
     <Flex justifyContent="space-between" alignItems="flex-start">
       <AfrostIcon
-        color="#76BF00"
+        color="brand.green"
         _hover={{ opacity: 0.8 }}
         h={{ base: "30px", md: "42px" }}
         ml={{ base: "2rem", lg: "" }}

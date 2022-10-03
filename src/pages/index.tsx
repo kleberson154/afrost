@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import WillLearn from "../components/WillLearn";
 import AnimationComp from "../components/AnimationComp";
 import HowLearn from "../components/HowLearn";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   const { colorMode } = useColorMode();
@@ -34,7 +35,7 @@ const Home: NextPage = () => {
           className="circlePurple"
           w="50%"
           height="600px"
-          backgroundColor="#9d00ffbc"
+          backgroundColor="brand.purple"
           opacity="0.3"
           borderRadius="1e+06px"
           filter="blur(100px)"
@@ -79,6 +80,7 @@ const Home: NextPage = () => {
         <Challenge />
         <About />
       </Flex>
+      <Footer />
     </Box>
   );
 };

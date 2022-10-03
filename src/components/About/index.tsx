@@ -19,29 +19,29 @@ function About() {
   const cards = [
     {
       id: 1,
-      colorOne: "#0066FF",
-      colorTwo: "#6EBC00",
+      colorOne: "brand.blue",
+      colorTwo: "brand.green",
       title: "+4 mil",
       description: "Parceiros Afrost no Brasil",
     },
     {
       id: 2,
-      colorOne: "#FF00B8",
-      colorTwo: "#9E00FF",
+      colorOne: "brand.pink",
+      colorTwo: "brand.pink",
       title: "+18 mil",
       description: "Envios feitos",
     },
     {
       id: 3,
-      colorOne: "#6EBC00",
-      colorTwo: "#0066FF",
+      colorOne: "brand.green",
+      colorTwo: "brand.blue",
       title: "+4 anos",
       description: "Experiência no mercado",
     },
     {
       id: 4,
-      colorOne: "#9E00FF",
-      colorTwo: "#0066FF",
+      colorOne: "brand.pink",
+      colorTwo: "brand.blue",
       title: "+28 milhões",
       description: "Faturados por nossos parceiros",
     },
@@ -74,9 +74,8 @@ function About() {
           >
             {cards.map(card => {
               return (
-                <AnimationDelay>
+                <AnimationDelay key={card.id}>
                   <Flex
-                    key={card.id}
                     bgGradient={`linear-gradient(to right, ${card.colorOne}, ${card.colorTwo}) border-box`}
                     boxShadow="0 0 10px bgGradient"
                     h="106px"

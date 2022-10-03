@@ -55,7 +55,7 @@ function HowLearn() {
           <Box
             w="52px"
             h="52px"
-            bg="#0066FF"
+            bg="brand.blue"
             borderRadius="50px"
             boxShadow="0px 0px 50px #0066FF"
             display={{ base: "none", xl: "initial" }}
@@ -69,10 +69,15 @@ function HowLearn() {
               textAlign={{ base: "center", xl: "right" }}
               w={{ base: "100%", sm: "369px" }}
             >
-              <Box bgGradient="linear(transparent 50%,  #0066FF 50%)" mb="10px">
-                <Heading fontSize="2xl">01. Ser</Heading>
+              <Box
+                bgGradient="linear(transparent 50%,  brand.blue 50%)"
+                mb="10px"
+              >
+                <Heading fontWeight={700} fontSize="2xl">
+                  01. Ser
+                </Heading>
               </Box>
-              <Heading fontSize="2xl" w="90%">
+              <Heading fontWeight={900} fontSize="2xl" w="90%">
                 Aprenda a dominar o poder do seu cérebro e construa uma
                 mentalidade F*DA!
               </Heading>
@@ -80,7 +85,6 @@ function HowLearn() {
               <Flex
                 flexDirection="column"
                 fontSize="md"
-                fontStyle="italic"
                 mt={4}
                 gap="26px"
                 lineHeight="auto"
@@ -110,7 +114,7 @@ function HowLearn() {
           top="-157px"
           transform="rotate(52deg)"
           display={{ base: "none", xl: "initial" }}
-          bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #0066FF, #FF00B8)`}
+          bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, brand.blue, brand.pink)`}
           bgSize="16px 2px, 100% 2px"
         />
         <Flex
@@ -127,7 +131,7 @@ function HowLearn() {
           <Box
             w="52px"
             h="52px"
-            bg="#FF00B8"
+            bg="brand.pink"
             borderRadius="50px"
             boxShadow="0px 0px 50px #FF00B8"
             display={{ base: "none", xl: "initial" }}
@@ -141,17 +145,21 @@ function HowLearn() {
               textAlign={{ base: "center", xl: "left" }}
               w={{ base: "100%", sm: "369px" }}
             >
-              <Box bgGradient="linear(transparent 50%,  #FF00B8 50%)" mb="10px">
-                <Heading fontSize="2xl">02. Fazer</Heading>
+              <Box
+                bgGradient="linear(transparent 50%,  brand.pink 50%)"
+                mb="10px"
+              >
+                <Heading fontWeight={700} fontSize="2xl">
+                  02. Fazer
+                </Heading>
               </Box>
-              <Heading fontSize="2xl" w="80%">
+              <Heading fontWeight={900} fontSize="2xl" w="80%">
                 Transformando sua mentalidade em um império
               </Heading>
 
               <Flex
                 flexDirection="column"
                 fontSize="md"
-                fontStyle="italic"
                 mt={4}
                 gap="26px"
                 lineHeight="auto"
@@ -175,7 +183,7 @@ function HowLearn() {
           top="-100px"
           transform="rotate(128deg)"
           display={{ base: "none", xl: "initial" }}
-          bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #FF00B8, #6EBC00)`}
+          bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, brand.pink, brand.green)`}
           bgSize="16px 2px, 100% 2px"
         />
         <Flex
@@ -192,9 +200,9 @@ function HowLearn() {
           <Box
             w="52px"
             h="52px"
-            bg="#6EBC00"
+            bg="brand.green"
             borderRadius="50px"
-            boxShadow="0px 0px 50px #6EBC00"
+            boxShadow="0px 0px 50px #a2e347"
             display={{ base: "none", xl: "initial" }}
             position="relative"
             top={{ base: "0", xl: "-125px" }}
@@ -207,17 +215,21 @@ function HowLearn() {
               w={{ base: "100%", sm: "369px" }}
               position="relative"
             >
-              <Box bgGradient="linear(transparent 50%,  #6EBC00 50%)" mb="10px">
-                <Heading fontSize="2xl">03. Ter</Heading>
+              <Box
+                bgGradient="linear(transparent 50%,  brand.green 50%)"
+                mb="10px"
+              >
+                <Heading fontWeight={700} fontSize="2xl">
+                  03. Ter
+                </Heading>
               </Box>
-              <Heading fontSize="2xl" w="90%">
+              <Heading fontWeight={900} fontSize="2xl" w="90%">
                 O grande dia! Todas suas ações convertidas em money!
               </Heading>
 
               <Flex
                 flexDirection="column"
                 fontSize="md"
-                fontStyle="italic"
                 mt={4}
                 gap="26px"
                 lineHeight="auto"
@@ -247,7 +259,7 @@ function HowLearn() {
           top="-254px"
           transform="rotate(50deg)"
           display={{ base: "none", xl: "initial" }}
-          bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, #6EBC00, #9E00FF)`}
+          bgGradient={`linear-gradient(to right, transparent 50%, brand.${colorMode}.background 50%), linear-gradient(to right, brand.green, brand.purple)`}
           bgSize="16px 2px, 100% 2px"
         />
         <Flex
@@ -264,9 +276,9 @@ function HowLearn() {
           <Box
             w="52px"
             h="52px"
-            bg="#9E00FF"
+            bg="brand.purple"
             borderRadius="50px"
-            boxShadow="0px 0px 50px #9E00FF"
+            boxShadow="0px 0px 50px #807AD0"
             display={{ base: "none", xl: "initial" }}
             position="relative"
             top={{ base: "0", xl: "-25px" }}
@@ -278,17 +290,21 @@ function HowLearn() {
               textAlign={{ base: "center", xl: "left" }}
               w={{ base: "100%", sm: "369px" }}
             >
-              <Box bgGradient="linear(transparent 50%,  #9E00FF 50%)" mb="10px">
-                <Heading fontSize="2xl">04. Sucesso</Heading>
+              <Box
+                bgGradient="linear(transparent 50%,  brand.purple 50%)"
+                mb="10px"
+              >
+                <Heading fontWeight={700} fontSize="2xl">
+                  04. Sucesso
+                </Heading>
               </Box>
-              <Heading fontSize="2xl">
+              <Heading fontWeight={900} fontSize="2xl">
                 O dia onde você será um vitorioso
               </Heading>
 
               <Flex
                 flexDirection="column"
                 fontSize="md"
-                fontStyle="italic"
                 mt={4}
                 gap="26px"
                 lineHeight="auto"

@@ -16,10 +16,10 @@ import { FaTelegramPlane } from "react-icons/fa";
 import Form from "../Form";
 
 function WillLearn() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const { onOpen, isOpen, onClose } = useDisclosure();
 
-  const Learn = [
+  const learns = [
     {
       id: 1,
       color: "#0066FF",
@@ -38,7 +38,7 @@ function WillLearn() {
     },
     {
       id: 3,
-      color: "#6EBC00",
+      color: "#a2e347",
       image: "/assets/iconGreen.svg",
       heading: "Torne-se uma máquina de vendas",
       description:
@@ -46,7 +46,7 @@ function WillLearn() {
     },
     {
       id: 4,
-      color: "#9E00FF",
+      color: "#807AD0",
       image: "/assets/iconPurple.svg",
       heading: "Finanças",
       description:
@@ -76,59 +76,56 @@ function WillLearn() {
         mt={12}
         mb={28}
       >
-        {Learn.map(Learn => {
+        {learns.map(learn => {
           return (
-            <>
-              <AnimationDelay>
+            <AnimationDelay key={learn.id}>
+              <Flex
+                position="relative"
+                flexDirection="column"
+                justifyContent="flex-start"
+                alignItems="flex-start"
+                bg={colorMode}
+                border="2px solid "
+                borderColor={colorMode === "dark" ? "#12141F" : "#CCCCCC"}
+                borderRadius="10px"
+                p="40px 15px 40px 40px"
+                h={{ base: "330px", sm: "276px" }}
+                w="100%"
+                maxW="360px"
+                overflow="hidden"
+              >
+                <Box
+                  position="absolute"
+                  top="-13px"
+                  w="240px"
+                  h="120px"
+                  bg={learn.color}
+                  opacity="0.4"
+                  filter="blur(50px)"
+                  borderRadius="100px"
+                  zIndex="-1"
+                />
                 <Flex
-                  position="relative"
-                  flexDirection="column"
-                  justifyContent="flex-start"
-                  alignItems="flex-start"
-                  bg={colorMode}
-                  border="2px solid "
-                  borderColor={colorMode === "dark" ? "#12141F" : "#CCCCCC"}
-                  borderRadius="10px"
-                  p="40px 15px 40px 40px"
-                  h={{ base: "330px", sm: "276px" }}
-                  w="100%"
-                  maxW="360px"
-                  overflow="hidden"
-                  key={Learn.id}
+                  w="40px"
+                  h="40px"
+                  bg={`brand.${colorMode}.background`}
+                  justifyContent="center"
+                  alignItems="center"
+                  borderRadius="100px"
+                  boxShadow={`inset 0px 0px 10px ${learn.color}`}
                 >
-                  <Box
-                    position="absolute"
-                    top="-13px"
-                    w="240px"
-                    h="120px"
-                    bg={Learn.color}
-                    opacity="0.4"
-                    filter="blur(50px)"
-                    borderRadius="100px"
-                    zIndex="-1"
-                  />
-                  <Flex
-                    w="40px"
-                    h="40px"
-                    bg={`brand.${colorMode}.background`}
-                    justifyContent="center"
-                    alignItems="center"
-                    borderRadius="100px"
-                    boxShadow={`inset 0px 0px 10px ${Learn.color}`}
-                  >
-                    <Image src={Learn.image} />
-                  </Flex>
-                  <Flex flexDirection="column" gap={4} h="121px" mt="24px">
-                    <Heading fontSize="2xl" fontWeight={700} lineHeight="auto">
-                      {Learn.heading}
-                    </Heading>
-                    <Text fontSize="md" lineHeight="auto">
-                      {Learn.description}
-                    </Text>
-                  </Flex>
+                  <Image src={learn.image} />
                 </Flex>
-              </AnimationDelay>
-            </>
+                <Flex flexDirection="column" gap={4} h="121px" mt="24px">
+                  <Heading fontSize="2xl" fontWeight={700} lineHeight="auto">
+                    {learn.heading}
+                  </Heading>
+                  <Text fontSize="md" lineHeight="auto">
+                    {learn.description}
+                  </Text>
+                </Flex>
+              </Flex>
+            </AnimationDelay>
           );
         })}
         <Box mt={16} w={{ base: "90%", md: "100%" }}>

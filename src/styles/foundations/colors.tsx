@@ -1,9 +1,14 @@
 export const colors = {
   brand: {
-    green: "#6EBC00",
+    green: "#a2e347",
     purple: "#807AD0",
+    blue: "#0066FF",
+    pink: "#FF00B8",
+    gray: "#dae0e4",
+    white: "#fff",
+    black: "#000",
     light: {
-      text: "#252E34",
+      text: "#000",
       background: "#F5F5F5",
     },
     dark: {

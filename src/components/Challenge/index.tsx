@@ -27,7 +27,7 @@ function Challenge() {
           O{" "}
           <Text
             as="span"
-            bgGradient="linear(to-r, brand.green, brand.purple)"
+            bgGradient="linear(to-r, brand.blue, brand.pink)"
             bgClip="text"
           >
             Desafio Afrost

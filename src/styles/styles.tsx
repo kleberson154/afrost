@@ -1,1 +1,7 @@
-export const styles = {};
+export const styles = {
+  global: {
+    html: {
+      scrollBehavior: "smooth",
+    },
+  },
+};

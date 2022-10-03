@@ -61,7 +61,7 @@ function Form() {
         borderRadius="10px"
         alignItems="center"
         justifyContent="center"
-        bgGradient="linear(90deg, #0066FF 20.83%, #6EBC00 74.48%)"
+        bgGradient="linear(90deg, brand.blue 20.83%, brand.green 74.48%)"
       >
         <Flex
           w="99%"
